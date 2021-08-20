@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    margin: 0; /* Espaço */
+    background-color: whitesmoke;
+    font-family: 'Karla';
+}
+.wraper{
+    border: 5px hidden white;
+    margin: 10px;
+    border-radius: 34px; /* Cantos arredondados */
+    overflow: hidden; /* Especifica o que deve acontecer se o conteúdo estourar a caixa de um elemento. */
+    box-shadow: pink; /* Sombra ao texto */
+}
+.grid1{
+    background-color: white;
+    padding: 30px;    /* Defina o preenchimento para todos os quatro lados de um elemento */
+}
+.grid2{
+    background-color: hsl(179, 62%, 43%);
+    padding: 30px; 
+}
+.grid3{
+    background-color: hsl(179, 41%, 56%);
+    padding: 30px;
+   
+}
+/*Text @grid1*/
+.grid1 h1{
+    color: #35bbb9;
+    margin-top: -1px;
+}
+.grid1 h3{
+    color: #a6be38;
+}
+.grid1 p{
+    color: hsla(217, 22%, 67%, 0.801);
+    font-size:16px;
+    line-height: 30px; /* Espaçamento entre as letras */
+}
+
+/*Text @grid2*/
+.grid2 h2{
+    color: white;
+    margin-top: -9px; /* Defina a margem superior de um elemento */
+    
+}
+.grid2 h1{
+    color:white;
+    font-size: 45px;
+    margin-top: -6px;
+}
+.grid2 h1 span{
+    color:hsl(204, 43%, 93%);
+    font-size: 18px;
+    font-weight: normal;
+    opacity: .8; /* Defina o nível de opacidade para um elemento */
+}
+.grid2 p{
+    color:white;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: -24px;
+
+}
+/*Button*/
+.btn-container{
+    display: flex; /* Especifica o comportamento de exibição (o tipo de caixa de renderização) de um elemento. */
+
+}
+input[type=button]{
+    font-family: 'Karla';
+    background-color: hsl(0, 68%, 54%);
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: 25px;
+    color:white;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    justify-content: center;
+}
+input[type=button]:hover{
+    opacity: .9;
+    background-color: #d4d436;
+}
+
+/*Text @grid3*/
+.grid3 h2{
+    color:white;
+    margin-top: -10px;
+}
+
+li{
+    list-style-type: none;
+    color: hsl(204, 43%, 93%);
+    line-height: 25px;
+}
+
+/*Footer*/
+.footer{
+    font-size: 15px;
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    height:20px; 
+    text-align: center;
+    background-color:hsla(179, 62%, 43%, 0.37);
+    color: rgb(53, 53, 53);
+ }
+
+/*Full Screen*/
+@media(min-width: 930px) {
+    .wraper {
+        position: absolute;
+        width: 60%;
+        display: flex;
+        margin: 100px 100px 0px 100px;
+        flex-wrap: wrap; /* Faça os itens flexíveis embrulhar, se necessárioFaça os itens flexíveis embrulhar, se necessário */
+        left:15%;
+    }
+    .grid2 {
+        flex-grow: 1; /* Especifica quanto o item crescerá em relação ao resto dos itens flexíveis dentro do mesmo contêiner 
+        (espaçamento) */
+
+    }
+    .grid3 {
+        flex-grow: 1;
+    }
+}
